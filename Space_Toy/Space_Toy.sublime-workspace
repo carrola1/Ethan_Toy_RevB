@@ -1,0 +1,572 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"CH",
+				"CHECK_XOR_EC20"
+			],
+			[
+				"CHE",
+				"CHECK_BD"
+			],
+			[
+				"sec_ver",
+				"sec_ver_ind"
+			],
+			[
+				"start",
+				"start_stb"
+			],
+			[
+				"xor",
+				"xor_ec20"
+			],
+			[
+				"std",
+				"std_logic_vector"
+			],
+			[
+				"st",
+				"start_stb_i"
+			],
+			[
+				"XOR_",
+				"XOR_EC20"
+			],
+			[
+				"XOR",
+				"XOR_E01"
+			],
+			[
+				"xor_e",
+				"xor_e01_o"
+			],
+			[
+				"sec",
+				"sec_ver_match"
+			],
+			[
+				"NUM",
+				"NUM_SEC_VER"
+			],
+			[
+				"std_lo",
+				"std_logic_vector"
+			],
+			[
+				"WAIT",
+				"WAIT_FOR_CHARGE"
+			],
+			[
+				"EEPROM",
+				"EEPROM_TRANS"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"Load",
+				"LoadReplyReg"
+			],
+			[
+				"Sym",
+				"SymTimerRstReg"
+			],
+			[
+				"SymT",
+				"SymTimerRst"
+			],
+			[
+				"mesMa",
+				"mesMaxAct\tstatement"
+			],
+			[
+				"rtu",
+				"rtuCntAscii"
+			],
+			[
+				"VIC_",
+				"VIC_BLOCK"
+			],
+			[
+				"VicBl",
+				"VicBlockCnt"
+			],
+			[
+				"Vic",
+				"VicEnb"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Space_Toy.ino",
+			"settings":
+			{
+				"buffer_size": 8274,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Space_Toy_Funcs.cpp",
+			"settings":
+			{
+				"buffer_size": 2447,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Space_Toy_Funcs.h",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"materia",
+				"Material Theme: Activate theme"
+			],
+			[
+				"material theme ",
+				"Material Theme: Extras"
+			],
+			[
+				"material",
+				"Material Theme: Activate theme"
+			],
+			[
+				"file",
+				"FileDiffs: Menu"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 414.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/GitHub/Ethan_Toy_RevB/Space_Toy"
+	],
+	"file_history":
+	[
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp",
+		"/C/GitHub/PulseSensor/PulseSensor/PulseSensor/PulseSensor.ino",
+		"/C/GitHub/PulseSensor/PulseSensor/PulseSensor/max30102.cpp",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_Sensor/Adafruit_Sensor.h",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_TCS34725/Adafruit_TCS34725.h",
+		"/C/GitHub/PulseSensor/PulseSensor/PulseSensor/algorithm.cpp",
+		"/C/GitHub/PulseSensor/PulseSensor/PulseSensor/max30102.h",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/FFT/FFT.h",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_Soundboard/Adafruit_Soundboard.cpp",
+		"//eesuscifps01.na.jnj.com/homeh$/acarro12/Arduino/libraries/Adafruit_Soundboard/Adafruit_Soundboard.h",
+		"/C/Users/acarro12/Box Sync/KiCAD/myLib/mylibrary.lib",
+		"/C/Users/acarro12/Box Sync/KiCAD/BLE_Accelerometer_Activation/BLE_Accelerometer_Activation-cache.lib",
+		"/C/Users/acarro12/Box Sync/KiCAD/EEPROM_Tester_RevC/EepromTester-cache.lib",
+		"/C/Users/acarro12/Desktop/Dummy Security Version 0x21.txt",
+		"/C/Users/acarro12/Desktop/Dummy_bin.txt",
+		"/C/Gideon/Architecture/Security Versions/0x5F_Phase8p7.txt",
+		"/C/Gideon/Architecture/Security Versions/0x21_Phase8p7_Dummy.txt",
+		"/C/Gideon/Phase 8.7/Ethicon MS Generator/xor.txt",
+		"/C/Users/acarro12/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/S3LLMY6U/Dummy.txt",
+		"/C/Users/acarro12/Desktop/Dummy.txt",
+		"/C/Users/acarro12/AppData/Local/Temp/7zO87704368/readme.txt",
+		"/C/Users/acarro12/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/S3LLMY6U/Post_5.txt",
+		"/C/Gideon/Phase 8.7/Ethicon MS Generator/MS_Algorithm.py",
+		"/C/Subversion/CHAP/TS3830/MemoryMap/Code/memory_map.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/QGen/Code/QGen.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/TestCmdIntf/Code/TestCmdIntf.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/timers.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/time_lookup.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/qframe_sm.v",
+		"/C/Subversion/CHAP/TS3830/Security/Code/demod.v",
+		"/C/Subversion/CHAP/TS3830/Security/Code/scrty.v",
+		"/C/Subversion/CHAP/TS3830/RegBank/Code/RegBank1.v",
+		"/C/Subversion/CHAP/TS3830/CRC/Code/crc_sm_bank1.v",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Demos/Ethicon Demo Board/Accelerometer_Widgets.txt",
+		"/C/ASIC Projects/Tiny FSR/Tiny_FSR_Trig.txt",
+		"/C/ASIC Projects/Tiny FSR/Tiny_FSR_Config.txt",
+		"/C/ASIC Projects/Tiny FSR/Tiny_FSR_Widgets.txt",
+		"/C/GitHub/Ethan_Toy_RevB/Space_Toy/Space_Toy.ino",
+		"/C/Subversion/CHAP/Phase8p1_Tester/TestSet_TopLevel_EepromTester.v",
+		"/C/Meetings/Meetings.txt",
+		"/C/ASIC Projects/Tiny FSR/ADC_Widgets.txt",
+		"/E/1111308712.xml",
+		"/C/Users/acarro12/Desktop/sketch_jul13a.ino",
+		"/C/ASIC Projects/GEN11 Arb Wave Gen/ArbWaveGen/ArbWaveGen.ino",
+		"/C/ASIC Projects/Tiny Blynk BLE/Tiny_Blynk_BLE/Tiny_Blynk_BLE.ino",
+		"/C/Subversion/CHAP/TS3830/RegBank/Code/RegBank0.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/Testset_TopLevel_GEN11/Code/TestSet_TopLevel_GEN11.v",
+		"/C/Subversion/CHAP/Phase8p1_Tester/TestSet_TopLevel_GEN11.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/Testset_TopLevel/Code/TestSet_TopLevel.v",
+		"/C/Subversion/CHAP/TS3830/SerialPort/Test/SerialSlave.v",
+		"/C/Users/acarro12/Desktop/SerialSlaveSimpler_PSOC.v",
+		"/C/Users/acarro12/Desktop/SerialSlave_PSOC.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/Testset_TopLevel/Code/TestSet_TopLevel_tb.v",
+		"/C/Subversion/CHAP/TS3830/DigCore/Code/TP102A_001A_DIG_CORE.v",
+		"/C/ASIC Projects/Tiny BLE Footswitch/Tiny_BLE_Trig.txt",
+		"/C/Users/acarro12/AppData/Local/Temp/7zOC1DF8EE5/ReadMe.txt",
+		"/C/Subversion/CHAP/TS3830/SerialPort/Code/serial_proc.v",
+		"/C/Subversion/CHAP/TS3830/Nack2/Code/NACK2_proc.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/Q_Frame_Top.v",
+		"/C/Subversion/CHAP/TS3830/AddrTrans/Code/addr_trans.v",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Scripts/Python Scripts/pyinstaller_command.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Scripts/Python Scripts/ASIC_GUI.spec",
+		"/C/GitHub/MonsterCalc/pyinstaller_command.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Scripts/Python Scripts/ASIC_GUI.py",
+		"/C/Subversion/CHAP/TS3830/SerialPort/Test/SerialSlave.mpf",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/EepromSim/Code/EepromSim.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/Testset_TopLevel/Code/TestSet_TopLevel_Wrapper.v",
+		"/C/ASIC Projects/Denali NFC/Requirements/M24SR02_CrcCalc_GEN11.py",
+		"/C/Users/acarro12/Desktop/Denali Use Tracking NPRs/NPR20170316_AC_Denali_NFC/M24SR02_CrcCalc_GEN11.py",
+		"/C/Users/acarro12/Desktop/Denali Use Tracking NPRs/NPR20170316_AC_Denali_NFC/M24SR02_CrcCalc.py",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Scripts/AllZerosTest.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170414_093751_Denali_NFC_Write_NDEF.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170414_093809_Denali_NFC_Write_NDEF.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170414_093039_Denali_NFC_Config_ASIC.txt",
+		"/C/ASIC Projects/Denali NFC/Requirements/M24SR02_CrcCalc.py",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_104657_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_103930_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_102243_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_102025_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_100846_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_101037_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_095954_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_095038_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_095740_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_093840_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170411_092745_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170413_090436_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170411_091143_Denali_Mfg_M24SR02_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170410_134512_Script_Check_Cap_State_V2.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170410_104347_Script_Check_Cap_State_V2.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170410_091516_Script_Check_Cap_State_V2.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170410_080238_Script_Charge_Cap_V2.txt",
+		"/C/Users/acarro12/AppData/Local/Temp/7zO80070BCE/README.md",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170407_082026_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170407_075918_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170407_075754_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170407_075217_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170407_075651_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170406_145716_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170406_125018_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170406_101042_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170406_090544_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170405_165942_Script_Check_Cap_State.txt",
+		"/C/Users/acarro12/Desktop/Time Of Flight_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170405_144912_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170405_131457_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170405_130535_Script_Check_Cap_State.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/Test/Scripts/Script_08_SerialPortTest.txt",
+		"/C/ASIC Projects/Tiny Intf Board/Tiny_Intf_Trig.txt",
+		"/C/Users/acarro12/Downloads/R1A_FLOYD_v1p2_AlgorithmOnly (2).xml",
+		"//na.jnj.com/eesusdfsroot/Ethicon Endo-Surgery/AllSites/Cincinnati/AllCincinnati/kubrick/Stanley/0_GEN11 Systems/New Scope Request/NPR20170316_AC_Denali_NFC/M24SR02_CrcCalc.py",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/glitch_filt.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/reset.v",
+		"/C/Subversion/CHAP/TS3830/Q_Frame/Code/resync.v",
+		"/C/Subversion/CHAP/TS3830/Reset/Code/qf_params.v",
+		"/C/Subversion/CHAP/TS3830/Reset/Code/reset.v",
+		"/C/Subversion/CHAP/TS3830/Scan/Code/iso_output.v",
+		"/C/Subversion/CHAP/TS3830/Scan/Code/scan_clk_ctrl.v",
+		"/C/Subversion/CHAP/TS3830/DigCore/Code/TP102A_001B_DIG_CHIPLET.v",
+		"/C/Subversion/CHAP/TS3830/Interface/Code/intf.v",
+		"/C/Subversion/CHAP/TS3830/SerialPort/Code/serial_proc_cmp.v",
+		"/C/Subversion/CHAP/FPGA Test Set/HDL/Testset_TopLevel_ASIC_Ctrl/Code/TestSet_TopLevel_ASIC_Ctrl.v",
+		"/C/Users/acarro12/Desktop/SerPortErrTest_Config.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/ASIC Settings.ini",
+		"/C/Users/acarro12/Desktop/SerPortErrTest_Run.txt",
+		"/C/Subversion/CHAP/FPGA Test Set/LabVIEW/RawSerial/20170317_165207_SerPortErrTest_Config.txt"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Space_Toy.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Arduino-like IDE/Arduino.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Space_Toy_Funcs.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Space_Toy_Funcs.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 141.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_build_panel":
+	{
+		"height": 0.0
+	},
+	"output.stino_log":
+	{
+		"height": 98.0
+	},
+	"output.stino_panel":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "Space_Toy.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Subversion\\CHAP\\FPGA Test Set\\Test\\Scripts\\Python Scripts\\ASIC Python Scripts.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,13 @@
+(module MountingHole_p1in (layer F.Cu) (tedit 59AA1964)
+  (descr "Mounting Hole 2.5mm")
+  (tags "mounting hole 2.5mm")
+  (fp_text reference REF** (at 0 -3.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value MountingHole_p1in (at 0 3.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 2.5 0) (layer Cmts.User) (width 0.15))
+  (fp_circle (center 0 0) (end 2.75 0) (layer F.CrtYd) (width 0.05))
+  (pad "" thru_hole circle (at 0 0) (size 3.302 3.302) (drill 2.54) (layers *.Cu *.Mask))
+)

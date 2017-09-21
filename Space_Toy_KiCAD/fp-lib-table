@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name adafruit)(type KiCad)(uri "$(KIPRJMOD)/SpaceToyLib/adafruit.pretty")(options "")(descr ""))
+  (lib (name ledDisplay)(type KiCad)(uri "$(KIPRJMOD)/SpaceToyLib/ledDisplay.pretty")(options "")(descr ""))
+  (lib (name myfootprint)(type KiCad)(uri "$(KIPRJMOD)/SpaceToyLib/myfootprint.pretty")(options "")(descr ""))
+  (lib (name switch)(type KiCad)(uri "$(KIPRJMOD)/SpaceToyLib/switch.pretty")(options "")(descr ""))
+)
