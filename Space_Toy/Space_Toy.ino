@@ -70,9 +70,9 @@ Adafruit_Soundboard sfx = Adafruit_Soundboard(&ss, NULL, AUD_RST_PIN);
 #define XL_INT_PIN 6
 Adafruit_LIS3DH lis = Adafruit_LIS3DH();
 uint16_t xlTimer;
-#define XL_TO 35
+#define XL_TO 30
 #define XL_WAKE_THRESH 2000
-#define XL_INIT_THRESH 9900
+#define XL_INIT_THRESH 11000
 #define XL_BUILD_THRESH 9500
 int16_t last_x, last_y, last_z;
  
@@ -84,7 +84,7 @@ int16_t last_x, last_y, last_z;
 #define LED_SS_PIN   10
 LedControl lc=LedControl(LED_MOSI_PIN,LED_SCK_PIN,LED_SS_PIN,1);
 uint8_t ledCnt;
-#define LED_DLY 50  // delay between LED lit and next time we look at XL (ms)
+#define LED_DLY 70  // delay between LED lit and next time we look at XL (ms)
 
 //**********************************************
 // State Machine
@@ -196,18 +196,17 @@ void loop(void) {
   {
     // Turn everything off except accelerometer to conserve power
     case SLEEP:
-      Serial.println("SLEEP");
       if ((abs(current_x-last_x) > XL_WAKE_THRESH) || 
           (abs(current_y-last_y) > XL_WAKE_THRESH) ||
           (abs(current_z-last_z) > XL_WAKE_THRESH)) {
         digitalWrite(COLOR_LED_PIN, HIGH);
         lc.shutdown(0,false);
-        nextState = DETECT;
+        sleepTimer = 0;
+        nextState  = DETECT;
       }
       break;
 
     case DETECT:
-      Serial.println("DETECT");
       if (sleepTimer == SLEEP_TO) {
         digitalWrite(COLOR_LED_PIN, LOW);
         lc.shutdown(0,true);
@@ -231,7 +230,6 @@ void loop(void) {
       break;
 
     case COUNTDOWN:
-      Serial.println("COUNTDOWN");
       if (xlTimer == XL_TO) {
         nextState = DETECT;
         sfx.stop();
@@ -259,11 +257,9 @@ void loop(void) {
       break;
 
     case BLASTOFF:
-      Serial.println("BLASTOFF");
-      RGB_t pixels_rgb = get_rgb(RED);
-      set_pixels(pixels,pixels_rgb);
-      delay(2500);
+      rocket_animation();
       clear_pixels(pixels);
+      sfx.stop();
       lc.clearDisplay(0);
       ledCnt = 0;
       ledGraphEnb = false;
@@ -283,24 +279,24 @@ void loop(void) {
     if (ledCnt == 30) {
       // Do nothing
     } else {
-      if (ledCnt < 8) {
-        lc.setLed(0,ledCnt,0,true);
-        lc.setLed(0,ledCnt,4,true);
-      } else if (ledCnt < 16) {
-        lc.setLed(0,ledCnt-8,1,true);
-        lc.setLed(0,ledCnt-8,5,true);
-      } else if (ledCnt < 24) {
-        lc.setLed(0,ledCnt-16,2,true);
-        lc.setLed(0,ledCnt-16,6,true);
+      if (ledCnt < 6) {
+        lc.setLed(0,29-ledCnt-24,3,true);
+        lc.setLed(0,29-ledCnt-24,7,true);
+      } else if (ledCnt < 14) {
+        lc.setLed(0,29-ledCnt-16,2,true);
+        lc.setLed(0,29-ledCnt-16,6,true);
+      } else if (ledCnt < 22) {
+        lc.setLed(0,29-ledCnt-8,1,true);
+        lc.setLed(0,29-ledCnt-8,5,true);
       } else {
-        lc.setLed(0,ledCnt-24,3,true);
-        lc.setLed(0,ledCnt-24,7,true);
+        lc.setLed(0,29-ledCnt,0,true);
+        lc.setLed(0,29-ledCnt,4,true);
       }
       ledCnt = ledCnt + 1;
     }
   }
 
-  if (state == DETECT) {   // only check on color sensor if LED graph not activated
+  if (state == DETECT) {  // only check on color sensor if LED graph not active
     
     //********************************************** 
     // Get color sensor data
@@ -347,30 +343,54 @@ void loop(void) {
       current_color = UNKNOWN;
     }
   } 
-
   
+}
 
-
-  /*bool ledGraphEnb,ledGraphRes;
-  if ((abs(lis.x) > XL_THRESH) || (abs(lis.y) > XL_THRESH) || (abs(lis.z) > XL_THRESH)) {
-    ledGraphEnb = true;
-    ledGraphRes = false;
-    xlTimer = 0;
-  } else if (xlTimer == XL_TO) {
-    ledGraphRes = true;
-    ledGraphEnb = false;
-    xlTimer = xlTimer + 1;
-  } else if (xlTimer == XL_TO+1) {
-    ledGraphRes = false;
-    ledGraphEnb = false;
-  } else {
-    ledGraphEnb = false;
-    ledGraphEnb = false;
-    xlTimer = xlTimer + 1;
-  }*/
-
-  /*if (xlTimer < XL_TO) {
-    delay(LED_DLY);  // slow it down
-  }*/
-  
+void rocket_animation() {
+  set_pixels(pixels,{255,0,0});
+  bool ledState = true;
+  for (int ii = 0; ii < 12; ii++) {
+    ledState = !ledState;
+    for(int led_ind = 10; led_ind < 30; led_ind++) {
+      if (led_ind < 6) {
+        lc.setLed(0,29-led_ind-24,3,ledState);
+        lc.setLed(0,29-led_ind-24,7,ledState);
+      } else if (led_ind < 14) {
+        lc.setLed(0,29-led_ind-16,2,ledState);
+        lc.setLed(0,29-led_ind-16,6,ledState);
+      } else if (led_ind < 22) {
+        lc.setLed(0,29-led_ind-8,1,ledState);
+        lc.setLed(0,29-led_ind-8,5,ledState);
+      } else {
+        lc.setLed(0,29-led_ind,0,ledState);
+        lc.setLed(0,29-led_ind,4,ledState);
+      }
+      if (ledState == true) {
+        if (led_ind == 10) {
+          set_pixels(pixels,{255,127,0});
+        } else if (led_ind == 14) {
+          set_pixels(pixels,{255,100,0});
+        } else if (led_ind == 18) {
+          set_pixels(pixels,{255,70,0});
+        } else if (led_ind == 22) {
+          set_pixels(pixels,{255,35,0});
+        } else if (led_ind == 26) {
+          set_pixels(pixels,{255,0,0});
+        }
+      } else {
+        if (led_ind == 10) {
+          set_pixels(pixels,{255,0,0});
+        } else if (led_ind == 14) {
+          set_pixels(pixels,{200,0,0});
+        } else if (led_ind == 18) {
+          set_pixels(pixels,{150,0,0});
+        } else if (led_ind ==22) {
+          set_pixels(pixels,{100,0,0});
+        } else if (led_ind == 26) {
+          set_pixels(pixels,{50,0,0});
+        }
+      }
+      delay(15);
+    }
+  }
 }

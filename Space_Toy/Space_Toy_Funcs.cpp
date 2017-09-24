@@ -42,7 +42,7 @@ RGB_t get_rgb(colors_t color) {
     case RED:
       return {255,0,0};
     case ORANGE:
-      return {237,120,6};
+      return {255,60,0};
     case YELLOW:
       return {255,200,0};
     case PINK:
